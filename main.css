@@ -1,0 +1,22 @@
+#footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(15, 18, 24);
+    padding: 50px;
+}
+.jf-linkdiv {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 50px;
+}
+.jf-33 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: rgb(78, 142, 218);
+    text-decoration: none;
+}
