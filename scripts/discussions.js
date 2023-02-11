@@ -1,15 +1,43 @@
 const discussions  = [
 {
+id: "created",
 ticketLocation: "nss-evening-web-development/discussions-base",
 ticketName: "How To Prevent App From Automatically Crashing?",
 discussionPageName: "GhostZen_Help"
 },
+{
+  id: "created",
+  ticketLocation: "nss-evening-web-development/discussions-base",
+  ticketName: "main.js not linking from folder and to the DOM",
+  discussionPageName: "GhostZen_Help"
+},
+{
+  id: "created",
+  ticketLocation: "nss-evening-web-development/discussions-base",
+  ticketName: "No output display for JS code",
+  discussionPageName: "GhostZen_Help"
+},
+{
+  id: "created",
+  ticketLocation: "nss-evening-web-development/discussions-base",
+  ticketName: "API won't connect. Tried everything!",
+  discussionPageName: "GhostZen_Help"
+},
 ];
 
-const discussionToDOM = ( selectId, htmlRender) => {
+const discussionToDOM = (selectId, htmlRender) => {
 const divContainer = document.querySelector(selectId);
 divContainer.innerHTML = htmlRender;
 };
+
+
+//create a filter to cycle between created and commented
+
+
+const topBtns = () => {
+
+
+}
 
 
 
@@ -20,7 +48,7 @@ const createDiscussion = (array) => {
     domString += 
     
    `<div class="overallDiscussionCard">
-      <div style="display: flex; border: solid rgb(48, 54, 61) 1px; padding: 15px">  
+      <div class="container4two">
           <div class="mainDiscussLinks">
 
             <div class="discussTitle">
@@ -28,7 +56,7 @@ const createDiscussion = (array) => {
             <a href="" style="text-decoration: none; color:white;">${item.ticketName}</a>
             </div>
             <div>
-            <img src="Images/prayingHands.png">
+            <img src="Images/prayHands.png" style=" height: 20px; width: 20px;">
             <a href="" style="text-decoration: none; color: rgb(111, 116, 121)">${item.discussionPageName}</a>
             </div>
             
@@ -49,7 +77,7 @@ const createDiscussion = (array) => {
               <a>1</a>
             </div>
 
-            <div style="padding: 10px; box-sizing: content-box;">
+            <div style="padding: 10px; box-sizing: content-box; ">
             <img src="Images/Checkmark.png" style="height: 20px; width: 20px;">
             </div>
 
