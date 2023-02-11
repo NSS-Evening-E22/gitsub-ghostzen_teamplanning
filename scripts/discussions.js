@@ -6,14 +6,14 @@ discussionPageName: "GhostZen_Help"
 }
 ];
 
-const renderToDom = ( selectId, htmlRender){
+const discussionToDOM = ( selectId, htmlRender) => {
 const divContainer = document.querySelector(selectId);
 divContainer.innerHTML = htmlRender;
-}
+};
 
 const createDiscussion = () => {
   let domString = "";
-  for ( const i in discussions){
+  for ( const i in discussions) {
     domString += 
     `<div class="card">
     <div class="card-body">
@@ -37,6 +37,5 @@ const createDiscussion = () => {
   </div>`
   }
 
-  renderToDom("#container", domString);
-
-}
+  discussionToDOM("#container", domString);
+};
