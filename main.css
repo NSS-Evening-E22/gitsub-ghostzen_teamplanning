@@ -68,7 +68,6 @@ body {
  font-size: small;
 }
 
-
 .navbtn:hover {
   background-color: rgba(128, 128, 128, 0.178);
   border-radius: 5px;
@@ -85,6 +84,26 @@ body {
   color: white;
   margin-right: 20px;
   height: 100%;
+  width: 300px;
+  left: 202px;
+  top: 21px;
+  border-radius: 0px;
+}
+#organizations{
+  margin-bottom: 10px;
+}
+#sponsors{
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+
+}
+.sponsor-img{
+  border-radius: 50%;
+  margin-left: 5px;
+}
+.circle{
+  border-radius: 50%;
 }
 #page{
   display: flex;
