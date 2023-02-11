@@ -127,3 +127,21 @@ body {
   color: white;
   border:rgb(218, 218, 218);
 }
+
+/* CSS for Discussion Page */
+.overallDiscussionCard{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  border: solid gray 1px;
+  background-color: rgb(9, 73, 0);
+}
+.discussTitle{
+  background-color: blueviolet;
+}
+.mainDiscussLinks {
+  padding: 10px;
+  background-color: blue;
+}
