@@ -8,6 +8,7 @@
   right: 0;
   width: 100%;
 }
+
 #footer {
     display: flex;
     flex-wrap: wrap;
@@ -19,6 +20,7 @@
     align-self: flex-end;
     width: 100%;
 }
+
 #footer:hover {
   cursor: pointer;
 }
@@ -77,8 +79,8 @@ body {
 .icon {
   padding-right: 4px;
   max-width: 25px;
-  
 }
+  
 #profile{
   margin-left: 20px;
   color: white;
@@ -89,30 +91,37 @@ body {
   top: 21px;
   border-radius: 0px;
 }
+
 #organizations{
   margin-bottom: 10px;
 }
+
 #sponsors{
   display: flex;
   flex-wrap: wrap;
   width: 200px;
 
 }
+
 .sponsor-img{
   border-radius: 50%;
   margin-left: 5px;
 }
+
 .circle{
   border-radius: 50%;
 }
+
 #page{
   display: flex;
   flex-direction: row;
   /* height: 100vh; */
 }
+
 #middle{
   width: 100%;
 }
+
 .card {
   background-color: rgb(19, 21, 31);
   color: white;
