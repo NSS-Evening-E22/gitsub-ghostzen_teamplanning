@@ -29,17 +29,7 @@ const discussionToDOM = (selectId, htmlRender) => {
 const divContainer = document.querySelector(selectId);
 divContainer.innerHTML = htmlRender;
 };
-
-
 //create a filter to cycle between created and commented
-
-
-const topBtns = () => {
-
-
-}
-
-
 
 
 const createDiscussion = (array) => {
@@ -85,9 +75,10 @@ const createDiscussion = (array) => {
      </div>
   </div>`
   };
-  discussionToDOM("#container", domString);
+  discussionToDOM('#container', domString);
 };
+const discussBtn = document.querySelector('#discussions');
+
+discussBtn.addEventListener('click', createDiscussion);
 
 container.style.display = "block";
-
-createDiscussion(discussions);
