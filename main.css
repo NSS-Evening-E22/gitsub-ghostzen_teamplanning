@@ -135,16 +135,16 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   width: 80%;
+  text-decoration: none;
 }
-.discussTitle{
-  background-color: blueviolet;
-}
+
 .mainDiscussLinks {
   padding: 10px;
-  background-color: blue;
+  margin-right: 100px;
 }
 .iconPosition {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  background-color: rgb(49, 49, 49);
+  
 }
