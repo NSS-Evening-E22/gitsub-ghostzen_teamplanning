@@ -135,8 +135,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   width: 80%;
-  border: solid gray 1px;
-  background-color: rgb(9, 73, 0);
 }
 .discussTitle{
   background-color: blueviolet;
@@ -144,4 +142,9 @@ body {
 .mainDiscussLinks {
   padding: 10px;
   background-color: blue;
+}
+.iconPosition {
+  display: flex;
+  align-items: center;
+  background-color: rgb(49, 49, 49);
 }

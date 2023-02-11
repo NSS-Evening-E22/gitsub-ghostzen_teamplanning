@@ -26,10 +26,10 @@ const createDiscussion = (array) => {
     domString += 
     
    `<div class="overallDiscussionCard">
-    <div class="card-body">
-      <div style="display: flex;">  
+      <div style="display: flex; border: solid gray 1px;">  
           <div class="mainDiscussLinks">
-            <div class="discussTitle" style="padding-right: 20px;">
+
+            <div class="discussTitle">
             <a href=""><span style="color:gray; padding-right:10px;">${item.ticketLocation}</span></a>
             <a href=""><span style="color:white;">${item.ticketName}</span></a>
             </div>
@@ -37,24 +37,30 @@ const createDiscussion = (array) => {
             <img src="">
             <a href="">${item.discussionPageName}</a>
             </div>
+            
           </div>
         
-          <div>
-          <img src="Images/Monica.jpg" style="border-radius: 2000px; height: 40px; width: 40px;">
-          </div>
-          <div  style="background-color: rgb(54, 54, 54)";>
-          <p><span style="color:white;">Time</span></p>
-          </div>
-          <div>
-            <a>What</a>
-            <a>Yo</a>
-          </div>
-          <div>
-          <img src="/Images/Checkmark.png">
-          </div>
+          <div class="iconPosition" >
 
+            <div style="padding: 10px; box-sizing: content-box;">
+            <img src="Images/Monica.jpg" style="border-radius: 2000px; height: 40px; width: 40px;">
+            </div>
+
+            <div style="padding: 10px; color:white">
+            <a>1w</a>
+            </div>
+
+            <div style="padding: 10px; color: white">
+              <a>What</a>
+              <a>1</a>
+            </div>
+
+            <div style="padding: 10px; box-sizing: content-box;">
+            <img src="Images/Checkmark.png" style="height: 20px; width: 20px;">
+            </div>
+
+          </div>
      </div>
-  </div>
   </div>`
   };
   discussionToDOM("#container", domString);
