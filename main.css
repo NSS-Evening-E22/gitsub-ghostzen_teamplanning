@@ -127,3 +127,15 @@ body {
   color: white;
   border:rgb(218, 218, 218);
 }
+h3{
+  color: bisque;
+}
+#listContainer{
+  border-style: solid;
+  border-color: azure;
+  width: 1000px;
+  height: 100%;
+}
+#inputText{
+  margin-right: 650px;
+}
