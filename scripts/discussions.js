@@ -37,7 +37,9 @@ const createDiscussion = (array) => {
   for (item of discussions) {
     domString += 
     
-   `<div class="overallDiscussionCard">
+   `
+   <section class="cardplace">
+   <div class="overallDiscussionCard">
       <div class="container4two">
           <div class="mainDiscussLinks">
 
@@ -73,12 +75,12 @@ const createDiscussion = (array) => {
 
           </div>
      </div>
-  </div>`
+  </div>
+  </section>`
   };
   discussionToDOM('#container', domString);
 };
 const discussBtn = document.querySelector('#discussions');
 
-discussBtn.addEventListener('click', createDiscussion);
 
-container.style.display = "block";
+discussBtn.addEventListener('click', createDiscussion);

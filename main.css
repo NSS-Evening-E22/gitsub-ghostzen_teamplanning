@@ -129,6 +129,7 @@ body {
 }
 
 /* CSS for Discussion Page */
+
 .overallDiscussionCard{
   display: flex;
   flex-direction: row;
