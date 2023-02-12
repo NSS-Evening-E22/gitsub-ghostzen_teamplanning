@@ -38,10 +38,10 @@ const discussions  = [
         domString += 
     
        `
-       <section class="cardplace">
-       <div class="overallDiscussionCard">
           <div class="container4two">
+
               <div class="mainDiscussLinks">
+
                 <div class="discussTitle">
                 <a href="" style="text-decoration: none; color:gray; padding-right:10px;">${item.ticketLocation}</span></a>
                 <a href="" style="text-decoration: none; color:white;">${item.ticketName}</a>
@@ -69,12 +69,22 @@ const discussions  = [
                 </div>
               </div>
          </div>
-      </div>
-      </section>`
+    
+      `
       };
-      discussionToDOM('#container', domString);
+      discussionToDOM('#discussContainer', domString);
     };
     const discussBtn = document.querySelector('#discussions');
     
+   
+
+  
+    discussBtn.addEventListener('click', () => {
+        createDiscussion();
     
-    discussBtn.addEventListener('click', createDiscussion);
+    document.querySelector('#container').hidden = true;  
+    document.querySelector('#discussContainer').hidden = false;    
+    });
+
+
+    
