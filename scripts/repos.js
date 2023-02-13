@@ -33,14 +33,15 @@ const cardsOnDom = (array) => {
     </div>
   </div>` 
   }
-  renderToDomRepo("#container", domString);
+  renderToDomRepo("#container1", domString);
 };
 
-let containerRepo = document.querySelector("#container")
+let container1Repo = document.querySelector("#container1")
 
 cardsOnDom(repos);
 
-containerRepo.style.display = "flex"
+container1Repo.style.display = "flex"
+container1.style.flexDirection = "column"
 
 const repoButton = document.querySelector("#repos")
 

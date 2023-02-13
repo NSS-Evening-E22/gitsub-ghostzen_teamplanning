@@ -47,7 +47,7 @@ const showCards = (array) => {
 let container = document.querySelector("#container")
 
 container.style.display = "flex"
-container.style.flexDirection = "column"
+
 
 const packButton = document.querySelector("#packs")
 
