@@ -127,3 +127,11 @@ body {
   color: white;
   border:rgb(218, 218, 218);
 }
+
+.form-control {
+  width: 1000px;
+}
+
+.form-label {
+  color: white;
+}
