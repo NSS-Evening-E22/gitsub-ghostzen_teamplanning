@@ -48,6 +48,7 @@ const container = document.querySelector("#container")
 
 container.style.display = "flex"
 
+
 const showInput = () => {
   let domString = ""
   domString += `<h2 class="form-label">Create a new Package</h2>
