@@ -44,13 +44,52 @@ const showCards = (array) => {
   renderToDom("#container", domString)
 }
 
-let container = document.querySelector("#container")
+const container = document.querySelector("#container")
 
 container.style.display = "flex"
+
+
+const showInput = () => {
+  let domString = ""
+  domString += `<h2 class="form-label">Create a new Package</h2>
+  <form id="packsform">
+  <div class="mb-3">
+  <label for="title" class="form-label">Package Name</label>
+  <input type="text" class="form-control" id="title">
+</div>
+<div class="mb-3">
+  <label for="description" class="form-label">Package Description</label>
+  <textarea class="form-control" id="description" rows="3"></textarea>
+  <button type="submit" class="btn btn-primary" id="cpacks">Create Package</button>
+</div>
+</form>`
+renderToDom("#container2", domString)
+const addButton = document.querySelector("#cpacks")
+
+  addButton.addEventListener("click", (event) => {
+  event.preventDefault()
+
+  const title = document.querySelector("#title")
+  const description = document.querySelector("#description")
+
+  const newPackage = {
+    title: title.value,
+    description: description.value,
+  }
+
+  packages.push(newPackage)
+  showCards(packages) 
+
+  let form = document.querySelector("#packsform")
+  form.reset()
+})
+} 
 
 
 const packButton = document.querySelector("#packs")
 
 packButton.addEventListener("click", () => {
   showCards(packages)
+  showInput()
 })
+
