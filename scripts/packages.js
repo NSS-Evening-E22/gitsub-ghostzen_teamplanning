@@ -90,6 +90,11 @@ const packButton = document.querySelector("#packs")
 
 packButton.addEventListener("click", () => {
   showCards(packages)
+
+  //Jovanni added this
+  document.querySelector('#container').hidden = false;
+  document.querySelector('#discussContainer').hidden = true;
+  document.querySelector('#filtBtns').hidden = true;
   showInput()
 })
 

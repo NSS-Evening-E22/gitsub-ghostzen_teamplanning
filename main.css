@@ -127,6 +127,153 @@ body {
   color: white;
   border:rgb(218, 218, 218);
 }
+
+/* CSS for Discussion Page */
+.formBtns {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.searchInput {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  width: 80%;
+}
+#inputBar {
+border-radius: 8px;
+width: 100%;
+border-color: rgb(111, 116, 121);
+background-color: rgb(2, 4, 9);
+}
+.created{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 10px;
+  font-size: 22px;
+  color: rgb(244, 244, 244);
+  background-color: rgb(0, 102, 255);
+}
+.commented{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 10px;
+  font-size: 22px;
+  color: rgb(244, 244, 244);
+  background-color: rgb(0, 102, 255);
+}
+
+.container4two {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  border: solid rgb(48, 54, 61) 1px;
+  padding: 15px;
+  justify-content: space-between;
+  
+}
+
+.discussTitle {
+  width: 100%;
+}
+
+.mainDiscussLinks {
+  padding: 10px;
+  margin-right: 100px;
+}
+.iconPosition {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* CSS for Dimitric */
+.repoCard-desc {
+  flex: 1 0 auto;
+  display: block !important;
+  font-size: var(--h6-size, 12px) !important;
+  margin-bottom: var(--base-size-16, 16px) !important;
+  margin-top: var(--base-size-8, 8px) !important;
+  box-sizing: border-box;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: gainsboro;
+}
+.repoCard {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.repo-lang-color {
+  background-color: #f1e05a;
+  position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--color-primer-border-contrast);
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.lang {
+    font-size: var(--h6-size, 12px) !important;
+    color: gainsboro;
+}
+.div-il {
+  display: flex !important;
+  margin-bottom: var(--base-size-16, 16px) !important;
+  width: 49.99999998%;
+  box-sizing: border-box;
+}
+.repoCard-box {
+  background-color: var(--color-canvas-default);
+  border-color: var(--color-border-default);
+  border-radius: var(--primer-borderRadius-medium, 6px);
+  border-style: solid;
+  border-width: var(--primer-borderWidth-thin, 1px);
+  display: flex !important;
+  padding: var(--base-size-16, 16px) !important;
+  width: 100% !important;
+  box-sizing: border-box;
+}
+.pinned-repos {
+  display: flex !important;
+  flex-wrap: wrap;
+  margin-bottom: var(--base-size-24, 24px);
+  margin-right: -8px;
+  margin-left: -8px;
+  padding-left: 0;
+  margin-top: 0;
+  box-sizing: border-box;
+}
+
+.create-pinned-repo {
+  color: gainsboro;
+}
+
+.repoCard-statusBar {
+  display: flex;
+  gap: 15px
+}
+
+.pinned-title {
+  color: gainsboro;
+ }
+ 
 .form-control {
   width: 1000px;
 }
