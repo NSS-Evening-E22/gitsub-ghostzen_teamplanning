@@ -48,6 +48,7 @@ const container = document.querySelector("#container")
 
 container.style.display = "flex"
 
+
 const showInput = () => {
   let domString = ""
   domString += `<h2 class="form-label">Create a new Package</h2>
@@ -89,5 +90,10 @@ const packButton = document.querySelector("#packs")
 
 packButton.addEventListener("click", () => {
   showCards(packages)
+
+  //Jovanni added this
+  document.querySelector('#container').hidden = false;
+  document.querySelector('#discussContainer').hidden = true;
+  document.querySelector('#filtBtns').hidden = true;
   showInput()
 });
