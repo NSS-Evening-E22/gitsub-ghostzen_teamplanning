@@ -135,3 +135,37 @@ body {
 .form-label {
   color: white;
 }
+
+
+.search {
+  display: flex;
+  margin-bottom: 30px; 
+  align-content: center;
+  padding-top: 50px;
+  
+  
+}
+
+.searchbar {
+  background-color: transparent;
+  border-radius: 5px;
+  width: 500px;
+  color: white;
+  border: solid gray 1px;
+  
+}
+
+.btn-success {
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.card-body {
+  
+  border: solid rgb(255, 255, 255) 1px;
+}
+
+
+.card-text {
+  color: #777;
+}

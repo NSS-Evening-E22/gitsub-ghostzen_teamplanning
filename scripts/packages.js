@@ -90,5 +90,4 @@ const packButton = document.querySelector("#packs")
 packButton.addEventListener("click", () => {
   showCards(packages)
   showInput()
-})
-
+});
