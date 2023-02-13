@@ -196,7 +196,12 @@ background-color: rgb(2, 4, 9);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
 
+.form-control {
+  width: 1000px;
+}
 
-
+.form-label {
+  color: white;
 }
