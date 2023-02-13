@@ -175,6 +175,8 @@ const discussions  = [
     document.querySelector('#container').hidden = true;  
     document.querySelector('#discussContainer').hidden = false;
     document.querySelector('#filtBtns').hidden = false;
+    document.querySelector('#overviewContainer').hidden = true;
+    document.querySelector('#container2').hidden = true;
     });
 
     

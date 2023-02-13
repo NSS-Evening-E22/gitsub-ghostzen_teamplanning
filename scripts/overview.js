@@ -109,6 +109,9 @@ const overviewDisplay = () => {
   document.querySelector('#overviewContainer').hidden = false;
   
 }
+
+overviewDisplay();
+
 const startOverviewApp = () => {
   repoApp(ovRepos);
 
@@ -119,3 +122,14 @@ const startOverviewApp = () => {
 }
 
 startOverviewApp();
+
+const viewBtn = document.querySelector('#over');
+    viewBtn.addEventListener('click', () => {
+      overviewDisplay();
+    
+    
+    document.querySelector('#discussContainer').hidden = true;
+    document.querySelector('#filtBtns').hidden = true;
+    document.querySelector('#overviewContainer').hidden = false;
+    document.querySelector('#container2').hidden = true;
+    });
