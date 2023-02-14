@@ -96,5 +96,4 @@ packButton.addEventListener("click", () => {
   document.querySelector('#discussContainer').hidden = true;
   document.querySelector('#filtBtns').hidden = true;
   showInput()
-})
-
+});
