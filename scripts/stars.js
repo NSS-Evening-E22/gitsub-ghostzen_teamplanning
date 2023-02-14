@@ -114,5 +114,6 @@ const starting = ()=> {
     hideForm();
     createList();
     listsOnDom(lists)
+
 };
 starting();

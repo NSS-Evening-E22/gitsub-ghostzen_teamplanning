@@ -50,6 +50,8 @@ repoButton.addEventListener("click", () => {
   cardsOnDom(repos)
   showInputRepos()
   searchBar()
+
+  document.querySelector('#overviewContainer').hidden = true;
 })
 // create new repos form
 const showInputRepos = () => {

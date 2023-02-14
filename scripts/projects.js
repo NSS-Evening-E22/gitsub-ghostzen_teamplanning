@@ -107,6 +107,9 @@ let projectButton2 = document.querySelector('#proj')
 projectButton.addEventListener("click", () => {
   projectCards(projects);
 
+  document.querySelector('#overviewContainer').hidden = true;
+  
+
   return {
     name: proj.name,
     status: proj.status

@@ -107,15 +107,20 @@ const newPinnedRepo = (event) => {
 const overviewDisplay = () => {
   document.querySelector('#container').hidden = true;
   document.querySelector('#overviewContainer').hidden = false;
+  document.querySelector('#discussContainer').hidden = true;
+  document.querySelector('#filtBtns').hidden = true;
+  
   
 }
 const startOverviewApp = () => {
   repoApp(ovRepos);
 
-  // document.querySelector("#over").addEventListener('click', overviewDisplay)
+  document.querySelector("#over").addEventListener('click', overviewDisplay)
 
   document.querySelector("#new-pin-repo").addEventListener('click', newPinnedRepo)
 
 }
+
+
 
 startOverviewApp();
